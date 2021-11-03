@@ -1,0 +1,8 @@
+#set($id=$utils.autoId())
+{
+    "version": "2018-05-29",
+    "statements": [
+        "insert into posts(id, title, content) VALUES ('$id', '$ctx.args.post.title', '$ctx.args.post.content')",
+         "select * from posts WHERE id = '$id'"
+    ]
+}

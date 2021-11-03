@@ -1,0 +1,5 @@
+#set($tableKey = "id")
+#set($id = $util.autoId())
+$util.qr($context.arguments.post.put($tableKey, $id))
+
+{}

@@ -1,0 +1,26 @@
+type Post {
+  id: String!
+  title: String!
+  content: String!
+}
+
+input CreatePostInput {
+  title: String!
+  content: String!
+}
+
+input UpdatePostInput {
+  id: String!
+  title: String
+  content: String
+}
+
+type Query {
+  listPosts: [Post]
+}
+
+type Mutation {
+  createPost(post: CreatePostInput!): Post
+  createPostAurora(post: CreatePostInput!): Post
+  createPostAuroraPipeline(post: CreatePostInput!): Post  
+}

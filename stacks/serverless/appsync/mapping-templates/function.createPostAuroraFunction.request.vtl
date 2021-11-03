@@ -1,0 +1,7 @@
+{
+    "version": "2018-05-29",
+    "statements": [
+        "insert into posts(id, title, content) VALUES ('$ctx.args.post.id', '$ctx.args.post.title', '$ctx.args.post.content')",
+         "select * from posts WHERE id = '$ctx.args.post.id'"
+    ]
+}
